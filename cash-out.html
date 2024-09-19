@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
+    <title>Cash Out Page</title>
    <!-- daisyUI -->
    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
    <script src="https://cdn.tailwindcss.com"></script>
@@ -29,22 +29,22 @@
             <div class="display">
               <div class="artboard artboard-demo phone-3">
 
-             <div>
+             <div class="flex justify-center text-center">
                 <div class="stats shadow ">
                     <div class="stat">
                       <div id="present-amount" class="stat-value">45000</div>
-                      <div class="stat-desc ">Available Balance</div>
+                      <div class="stat-desc text-xs">Available Balance</div>
                     </div>
                   </div>
              </div>
                   
                   <div class="divider "></div>
                   <!-- user action button -->
-<div>
+<!-- <div>
     <button class="btn btn-lg">Add Money</button>
     <button id="cash-out-btn" class="btn btn-lg">Cash Out</button>
 
-</div>
+</div> -->
 <!-- add form start -->
 <div class="hero bg-base-200 ">
     <div class="hero-content flex-col lg:flex-row-reverse">
@@ -53,27 +53,27 @@
         <form class="card-body">
             <div class="form-control">
                 <label class="label">
-                  <span class="label-text text-xl font-bold">Bank Account Number</span>
+                  <span class="label-text text-xl font-bold">Agent Number</span>
                 </label>
-                <input id="account-num" type="text" placeholder="Enter 11 digit account number" class="input input-bordered text-sm" autocomplete="off" required />
+                <input id="agent-num" type="text" placeholder="Enter 11 digit number" class="input input-bordered text-sm" autocomplete="off" required />
               </div>
 
           <div class="form-control">
             <label class="label">
-              <span class="label-text text-xl font-bold">Amount to Add</span>
+              <span class="label-text text-xl font-bold">Amount</span>
             </label>
-            <input id="add-money-amount" type="text" placeholder="Add Amount to withdraw" class="input input-bordered" autocomplete="off" required />
+            <input id="withdraw-money-amount" type="text" placeholder="Enter amount to withdraw" class="input input-bordered" autocomplete="off" required />
           </div>
 
           <div class="form-control">
             <label class="label text-xl font-bold">
               <span class="label-text">Pin Number</span>
             </label>
-            <input id="add-money-pin" type="number" placeholder="Enter 4 digit pin number" class="input input-bordered" autocomplete="off" required />
+            <input id="cash-out-pin" type="number" placeholder="Enter 4 digit pin number" class="input input-bordered" autocomplete="off" required />
            
           </div>
           <div class="form-control mt-6">
-            <button id="add-money" class="btn btn-primary text-xl font-bold">Add Money</button>
+            <button id="withdraw-money-btn" class="btn btn-primary text-xl font-bold">Withdraw Money</button>
           </div>
         </form>
       </div>
@@ -85,7 +85,7 @@
           </div>
     </main>
 
-    <script src="./js/home.js"></script>
+    <script src="./js/cash-out.js"></script>
 
 </body>
 </html>
