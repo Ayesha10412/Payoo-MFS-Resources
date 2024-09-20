@@ -19,6 +19,6 @@ else{
 }
 })
 
-document.getElementById('cash-out-btn').addEventListener('click', function(){
-    window.location.href=('./cash-out.html');
-})
+// document.getElementById('cash-out-btn').addEventListener('click', function(){
+//     window.location.href=('./cash-out.html');
+// })

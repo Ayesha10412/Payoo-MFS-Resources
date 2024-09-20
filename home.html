@@ -41,12 +41,12 @@
                   <div class="divider "></div>
                   <!-- user action button -->
 <div>
-    <button class="btn btn-lg">Add Money</button>
+    <button id="add-money-btn" class="btn btn-lg">Add Money</button>
     <button id="cash-out-btn" class="btn btn-lg">Cash Out</button>
 
 </div>
 <!-- add form start -->
-<div class="hero bg-base-200 ">
+<div id="add-money-form" class=" hero bg-base-200 ">
     <div class="hero-content flex-col lg:flex-row-reverse">
      
       <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
@@ -80,12 +80,53 @@
     </div>
   </div>
  <!-- add money form end -->
+  
+ <!-- cash out form start -->
+ <div id="cash-out-form" class=" hidden hero bg-base-200 ">
+  <div class="hero-content flex-col lg:flex-row-reverse">
+   
+    <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+      <form class="card-body">
+          <div class="form-control">
+              <label class="label">
+                <span class="label-text text-xl font-bold">Agent Number</span>
+              </label>
+              <input id="agent-num" type="text" placeholder="Enter 11 digit number" class="input input-bordered text-sm" autocomplete="off" required />
+            </div>
+
+        <div class="form-control">
+          <label class="label">
+            <span class="label-text text-xl font-bold">Amount</span>
+          </label>
+          <input id="withdraw-money-amount" type="text" placeholder="Enter amount to withdraw" class="input input-bordered" autocomplete="off" required />
+        </div>
+
+        <div class="form-control">
+          <label class="label text-xl font-bold">
+            <span class="label-text">Pin Number</span>
+          </label>
+          <input id="cash-out-pin" type="number" placeholder="Enter 4 digit pin number" class="input input-bordered" autocomplete="off" required />
+         
+        </div>
+        <div class="form-control mt-6">
+          <button id="withdraw-money-btn" class="btn btn-primary text-xl font-bold">Withdraw Money</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+<!--cash out form end -->
+
+
+
+
               </div>
             </div>
           </div>
     </main>
 
     <script src="./js/home.js"></script>
-
+<script src="./js/cash-out.js"></script>
+<script src="./js/feature.js"></script>
 </body>
 </html>

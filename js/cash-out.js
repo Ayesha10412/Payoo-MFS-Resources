@@ -1,15 +1,15 @@
 document.getElementById('withdraw-money-btn').addEventListener('click', function(event){
     event.preventDefault();
     
-    const agentNum=document.getElementById('agent-num').value;
+    const accountNum=document.getElementById('agent-num').value;
     
-    const withdrawMoney=document.getElementById('withdraw-money-amount').value;
-    const withdrawAmount=parseFloat(withdrawMoney);
-    const cashOutPin=document.getElementById('cash-out-pin').value;
-    if(cashOutPin==='1234' && agentNum==='12345678'){
+    const addMoney=document.getElementById('withdraw-money-amount').value;
+    const availableAmount=parseFloat(addMoney);
+    const addPin=document.getElementById('cash-out-pin').value;
+    if(addPin==='1234' && accountNum==='12345678'){
         const presentAmount=document.getElementById('present-amount');
        const amount= parseFloat(presentAmount.innerText);
-        const newBalance =(amount - withdrawAmount);
+        const newBalance =(amount - availableAmount);
         console.log(newBalance);
     document.getElementById('present-amount').innerText=newBalance;
     
