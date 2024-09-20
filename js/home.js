@@ -5,6 +5,12 @@ const accountNum=document.getElementById('account-num').value;
 
 const addMoney=document.getElementById('add-money-amount').value;
 const availableAmount=parseFloat(addMoney);
+
+if(isNaN(addMoney)){
+    alert('Failed to add money');
+    return ;
+}
+
 const addPin=document.getElementById('add-money-pin').value;
 if(addPin==='1234' && accountNum==='12345678'){
     const presentAmount=document.getElementById('present-amount');
