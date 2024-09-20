@@ -13,6 +13,14 @@ if(addPin==='1234' && accountNum==='12345678'){
     console.log(newBalance);
 document.getElementById('present-amount').innerText=newBalance;
 
+
+// add to transactions history
+const p=document.createElement('p');
+p.innerText=`Added: ${addMoney} Tk. Balance: ${newBalance}`;
+console.log(p);
+// should be a common function
+document.getElementById('transaction-form').appendChild(p);
+
 }
 else{
     alert ('Invalid Information');

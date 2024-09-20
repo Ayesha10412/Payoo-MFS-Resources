@@ -17,7 +17,7 @@ document.getElementById('withdraw-money-btn').addEventListener('click', function
     else{
         alert ('Invalid Information');
     }
-    })
+    });
     
     // document.getElementById('cash-out-btn').addEventListener('click', function(){
     //     window.location.href=('./cash-out.html');
